@@ -7,7 +7,9 @@ function createCard(cell, data) {
   //   console.log(card.style);
   card.classList.add("p-card");
 
-  card.appendChild(createText(data._embedded["wp:term"][1][0].name.toUpperCase(), "h5"));
+  card.appendChild(
+    createText(data._embedded["wp:term"][1][0].name.toUpperCase(), "h5")
+  );
   card.appendChild(createDivider());
 
   card_data = document.createElement("div");
@@ -83,10 +85,7 @@ function getBlogData() {
       for (let i = 0; i < data.length; i++) {
         const item = data[i];
         container = document.getElementById("articles");
-        if (
-          container.lastChild.childNodes.length == 3 ||
-          container.lastChild.childNodes.length == 0
-        ) {
+        if (i == 0) {
           console.log("new Row");
           row = document.createElement("div");
           row.classList.add("row");
