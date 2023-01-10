@@ -1,0 +1,23 @@
+/* card_data.style.height = "300px";
+card_data.style.display = "flex";
+card_data.style["flex-direction"] = "column";
+card_data.style["justify-content"] = "space-between" */
+
+#card_data {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#articles {
+    margin-top: 50px;
+}
+
+.p-card {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: purple;
+    border-radius: 3px;
+    box-shadow: 0 0 8px lightgrey;
+}
